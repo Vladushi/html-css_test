@@ -11,7 +11,9 @@
 <header>
     <div class="header-container">
         <div class="logo">
-            <h3>Dasteen<span>.Blog</span></h3>
+            <a href="#">
+                <h3>Dasteen<span>.Blog</span></h3>
+            </a>
         </div>
         <nav>
             <ul>
@@ -52,14 +54,14 @@
                     <p>On this blog I share tips and tricks, frameworks, projects, tutorials, etc
                         Make sure you subscribe to get the latest updates</p>
                 </div>
-                <form>
+                <form action="#">
                     <div class="input_email-button">
-                        <input type="email" placeholder="Enter your email here....">
-                        <button>Subscribe</button>
+                        <input type="email" name="email" placeholder="Enter your email here....">
+                        <button type="submit">Subscribe</button>
                     </div>
                 </form>
             </div>
-            <img src="img/picture-1.png" alt="picture of Dusteen">
+            <img src="img/picture-1.png" alt="Picture of Dusteen">
         </div>
     </div>
 </main>
@@ -104,7 +106,7 @@
                 <p>Javascript</p>
             </div>
         </div>
-        <div class="category-section-container_background-card_blue">
+        <div class="category-section-container_background-card-blue">
             <div class="container-card-tailwind__logo-p-container">
                 <div class="rectangle__logo">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="24" viewBox="0 0 40 24">
@@ -158,8 +160,8 @@
         </div>
     </div>
 </section>
-<section class="article-section">
-    <div class="article-section-container">
+<section class="featured-article-section">
+    <div class="featured-article-section-container">
         <div class="view-articles_featured-article">
             <p>Featured Article</p>
             <div>
@@ -171,11 +173,9 @@
             </div>
         </div>
     </div>
-
-
-    <div class="article-section-container_cards">
-        <div class="article-section-container_background-card">
-            <div class="article-section-container_card-content-1">
+    <div class="featured-article-section-container_cards">
+        <div class="featured-article-section-container_background-card">
+            <div class="featured-article-section-container_card-content">
                 <img src="img/article_image-1.png" alt="picture">
                 <h3>Fundamental Of Javascript</h3>
                 <div class="article-section-container_card-bottom_content">
@@ -188,7 +188,7 @@
             </div>
         </div>
         <div class="article-section-container_background-card">
-            <div class="article-section-container_card-content-2">
+            <div class="article-section-container_card-content">
                 <img src="img/article_image-2.png" alt="picture">
                 <h3>Grid CSS make your life easier</h3>
                 <div class="article-section-container_card-bottom_content">
@@ -201,7 +201,7 @@
             </div>
         </div>
         <div class="article-section-container_background-card">
-            <div class="article-section-container_card-content-3">
+            <div class="article-section-container_card-content">
                 <img src="img/article_image-3.png" alt="picture">
                 <h3>Make animated light mode and dark mode toggle with CSS</h3>
                 <div class="article-section-container_card-bottom_content">
@@ -214,7 +214,7 @@
             </div>
         </div>
         <div class="article-section-container_background-card">
-            <div class="article-section-container_card-content-4">
+            <div class="article-section-container_card-content">
                 <img src="img/article_image-4.png" alt="picture">
                 <h3>Make tic tac toe games with react JS</h3>
                 <div class="article-section-container_card-bottom_content">
@@ -228,7 +228,6 @@
         </div>
     </div>
 </section>
-
 <section class="css-section">
     <div class="css-section-container">
         <div class="view-articles_css">
@@ -242,7 +241,6 @@
             </div>
         </div>
     </div>
-
     <div class="css-section-container_cards">
         <div class="css-section-container_background-card">
             <div class="css-section-container_card-content">
@@ -284,7 +282,7 @@
             </div>
         </div>
         <div class="css-section-container_background-card">
-            <div class="css-section-container_card-content-_other-margin">
+            <div class="css-section-container_card-content">
                 <img src="img/article_image-3.png" alt="picture">
                 <h3>Make animated light mode and dark mode toggle with CSS</h3>
                 <div class="css-section-container_card-bottom_content">
@@ -298,14 +296,12 @@
         </div>
     </div>
 </section>
-
-
 <section class="js-section">
     <div class="js-section-container">
         <div class="view-articles_js">
-            <p>See All Article</p>
+            <p>Javascript</p>
             <div>
-                <p>Javascript</p>
+                <p>See All Article</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16">
                     <path d="M2.12695 0.856445C2.26762 0.873447 2.40289 0.923934 2.52344 1.00391C2.64258 1.08299 2.74477 1.18897 2.8252 1.31348L6.92969 7.29883L6.98047 7.37793C7.0915 7.56772 7.15037 7.7911 7.15039 8.01855C7.15039 8.27844 7.07341 8.53298 6.92969 8.73828L6.92871 8.73926L2.67969 14.7256C2.58144 14.8647 2.45449 14.9775 2.30859 15.0518C2.16579 15.1244 2.00919 15.1567 1.85156 15.1475C1.61078 15.148 1.38178 15.0498 1.20312 14.876C1.10273 14.7783 1.02036 14.6596 0.960938 14.5273C0.901575 14.3951 0.866058 14.2508 0.854492 14.1035C0.842971 13.9563 0.856025 13.8077 0.893555 13.666C0.931064 13.5244 0.991926 13.3915 1.07422 13.2754L1.0752 13.2744L4.82129 8.01172L1.20898 2.74023V2.73926C1.12819 2.62208 1.06808 2.48873 1.03223 2.34668C0.996245 2.20408 0.98469 2.05462 0.998047 1.90723C1.01142 1.75996 1.05019 1.61679 1.11133 1.48535C1.17253 1.35384 1.25551 1.23579 1.35742 1.13965C1.45879 1.03625 1.57848 0.956653 1.70996 0.907227C1.84371 0.857001 1.98615 0.839463 2.12695 0.856445Z"
                           fill="#2B2C34" stroke="#2B2C34" stroke-width="0.3"/>
@@ -322,7 +318,7 @@
                     <img src="img/ellipse-80.png" alt="picture">
                     <div class="js-section-container_card-bottom_content-column">
                         <h4>Dasteen</h4>
-                        <p>Jan 10, 2022     ∙     3 min read</p>
+                        <p>Jan 10, 2022 ∙ 3 min read</p>
                     </div>
                 </div>
             </div>
@@ -335,7 +331,7 @@
                     <img src="img/ellipse-80.png" alt="picture">
                     <div class="js-section-container_card-bottom_content-column">
                         <h4>Dasteen</h4>
-                        <p>Jan 10, 2022     ∙     3 min read</p>
+                        <p>Jan 10, 2022 ∙ 3 min read</p>
                     </div>
                 </div>
             </div>
@@ -348,7 +344,7 @@
                     <img src="img/ellipse-80.png" alt="picture">
                     <div class="js-section-container_card-bottom_content-column">
                         <h4>Dasteen</h4>
-                        <p>Jan 10, 2022     ∙     3 min read</p>
+                        <p>Jan 10, 2022 ∙ 3 min read</p>
                     </div>
                 </div>
             </div>
@@ -361,15 +357,13 @@
                     <img src="img/ellipse-80.png" alt="picture">
                     <div class="js-section-container_card-bottom_content-column">
                         <h4>Dasteen</h4>
-                        <p>Jan 10, 2022     ∙     3 min read</p>
+                        <p>Jan 10, 2022 ∙ 3 min read</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-
 <section class="react-js_section">
     <div class="react-js_section-container">
         <div class="view-articles_react-js">
@@ -377,7 +371,8 @@
             <div>
                 <p>See All Article</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16">
-                    <path d="M2.12695 0.856445C2.26762 0.873447 2.40289 0.923934 2.52344 1.00391C2.64258 1.08299 2.74477 1.18897 2.8252 1.31348L6.92969 7.29883L6.98047 7.37793C7.0915 7.56772 7.15037 7.7911 7.15039 8.01855C7.15039 8.27844 7.07341 8.53298 6.92969 8.73828L6.92871 8.73926L2.67969 14.7256C2.58144 14.8647 2.45449 14.9775 2.30859 15.0518C2.16579 15.1244 2.00919 15.1567 1.85156 15.1475C1.61078 15.148 1.38178 15.0498 1.20312 14.876C1.10273 14.7783 1.02036 14.6596 0.960938 14.5273C0.901575 14.3951 0.866058 14.2508 0.854492 14.1035C0.842971 13.9563 0.856025 13.8077 0.893555 13.666C0.931064 13.5244 0.991926 13.3915 1.07422 13.2754L1.0752 13.2744L4.82129 8.01172L1.20898 2.74023V2.73926C1.12819 2.62208 1.06808 2.48873 1.03223 2.34668C0.996245 2.20408 0.98469 2.05462 0.998047 1.90723C1.01142 1.75996 1.05019 1.61679 1.11133 1.48535C1.17253 1.35384 1.25551 1.23579 1.35742 1.13965C1.45879 1.03625 1.57848 0.956653 1.70996 0.907227C1.84371 0.857001 1.98615 0.839463 2.12695 0.856445Z" fill="#2B2C34" stroke="#2B2C34" stroke-width="0.3"/>
+                    <path d="M2.12695 0.856445C2.26762 0.873447 2.40289 0.923934 2.52344 1.00391C2.64258 1.08299 2.74477 1.18897 2.8252 1.31348L6.92969 7.29883L6.98047 7.37793C7.0915 7.56772 7.15037 7.7911 7.15039 8.01855C7.15039 8.27844 7.07341 8.53298 6.92969 8.73828L6.92871 8.73926L2.67969 14.7256C2.58144 14.8647 2.45449 14.9775 2.30859 15.0518C2.16579 15.1244 2.00919 15.1567 1.85156 15.1475C1.61078 15.148 1.38178 15.0498 1.20312 14.876C1.10273 14.7783 1.02036 14.6596 0.960938 14.5273C0.901575 14.3951 0.866058 14.2508 0.854492 14.1035C0.842971 13.9563 0.856025 13.8077 0.893555 13.666C0.931064 13.5244 0.991926 13.3915 1.07422 13.2754L1.0752 13.2744L4.82129 8.01172L1.20898 2.74023V2.73926C1.12819 2.62208 1.06808 2.48873 1.03223 2.34668C0.996245 2.20408 0.98469 2.05462 0.998047 1.90723C1.01142 1.75996 1.05019 1.61679 1.11133 1.48535C1.17253 1.35384 1.25551 1.23579 1.35742 1.13965C1.45879 1.03625 1.57848 0.956653 1.70996 0.907227C1.84371 0.857001 1.98615 0.839463 2.12695 0.856445Z"
+                          fill="#2B2C34" stroke="#2B2C34" stroke-width="0.3"/>
                 </svg>
             </div>
         </div>
@@ -391,7 +386,7 @@
                     <img src="img/ellipse-80.png" alt="picture">
                     <div class="react-js_section-container_card-bottom_content-column">
                         <h4>Dasteen</h4>
-                        <p>Jan 10, 2022     ∙     3 min read</p>
+                        <p>Jan 10, 2022 ∙ 3 min read</p>
                     </div>
                 </div>
             </div>
@@ -404,7 +399,7 @@
                     <img src="img/ellipse-80.png" alt="picture">
                     <div class="react-js_section-container_card-bottom_content-column">
                         <h4>Dasteen</h4>
-                        <p>Jan 10, 2022     ∙     3 min read</p>
+                        <p>Jan 10, 2022 ∙ 3 min read</p>
                     </div>
                 </div>
             </div>
@@ -417,7 +412,7 @@
                     <img src="img/ellipse-80.png" alt="picture">
                     <div class="react-js_section-container_card-bottom_content-column">
                         <h4>Dasteen</h4>
-                        <p>Jan 10, 2022     ∙     3 min read</p>
+                        <p>Jan 10, 2022 ∙ 3 min read</p>
                     </div>
                 </div>
             </div>
@@ -430,7 +425,7 @@
                     <img src="img/ellipse-80.png" alt="picture">
                     <div class="react-js_section-container_card-bottom_content-column">
                         <h4>Dasteen</h4>
-                        <p>Jan 10, 2022     ∙     3 min read</p>
+                        <p>Jan 10, 2022 ∙ 3 min read</p>
                     </div>
                 </div>
             </div>
@@ -440,6 +435,93 @@
         <a href="#" class="more-article-button">More Article</a>
     </div>
 </section>
-
+<section class="subscribe-form-section">
+    <div class="subscribe-form-section_container">
+        <div class="subscribe-form-section_content">
+            <div class="subscribe-form-section_content-circle">
+                <img src="img/image-2.png" alt="image">
+            </div>
+            <h3>Subscribe For the lastest updates</h3>
+            <p>Subscribe to newsletter and never miss the new post every week.</p>
+            <form>
+                <div class="input_subscribe-form-section">
+                    <input type="email" placeholder="Enter your email here....">
+                    <button>Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<footer class="footer-section">
+        <div class="footer-content-container">
+            <div class="footer-content">
+                <div class="left-content">
+                    <h3>Dasteen<span>.blog</span></h3>
+                    <p>Digitaldastin by Dastin Darmawan</p>
+                    <div class="logo-icons">
+                        <img src="img/logo-1.png" alt="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
+                            <path d="M23 1.03813C22.0424 1.71361 20.9821 2.23024 19.86 2.56813C19.2577 1.87564 18.4573 1.38482 17.567 1.16206C16.6767 0.939292 15.7395 0.995328 14.8821 1.32259C14.0247 1.64984 13.2884 2.23253 12.773 2.99185C12.2575 3.75116 11.9877 4.65047 12 5.56813V6.56813C10.2426 6.6137 8.50127 6.22394 6.93101 5.43358C5.36074 4.64321 4.01032 3.47677 3 2.03813C3 2.03813 -1 11.0381 8 15.0381C5.94053 16.4361 3.48716 17.1371 1 17.0381C10 22.0381 21 17.0381 21 5.53813C20.9991 5.25959 20.9723 4.98173 20.92 4.70813C21.9406 3.70163 22.6608 2.43084 23 1.03813V1.03813Z"
+                                  stroke="#2B2C34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z"
+                                  stroke="#2B2C34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 11.3701C16.1234 12.2023 15.9812 13.0523 15.5937 13.7991C15.2062 14.5459 14.5931 15.1515 13.8416 15.5297C13.0901 15.908 12.2384 16.0397 11.4077 15.906C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1903 8.22768 13.4229 8.09402 12.5923C7.96035 11.7616 8.09202 10.91 8.47028 10.1584C8.84854 9.40691 9.45414 8.7938 10.2009 8.4063C10.9477 8.0188 11.7977 7.87665 12.63 8.00006C13.4789 8.12594 14.2648 8.52152 14.8716 9.12836C15.4785 9.73521 15.8741 10.5211 16 11.3701Z"
+                                  stroke="#2B2C34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17.5 6.5H17.51" stroke="#2B2C34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8V8Z"
+                                  stroke="#2B2C34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 9H2V21H6V9Z" stroke="#2B2C34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="#2B2C34"
+                                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <section class="category">
+                        <h4>Category</h4>
+                        <ul class="category-p">
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>Tailwind</li>
+                            <li>React JS</li>
+                            <li>More Category</li>
+                        </ul>
+                    </section>
+                    <section class="about-me">
+                        <h4>About Me</h4>
+                        <ul class="category-p">
+                            <li>About Me</li>
+                            <li>Projects</li>
+                            <li>Achievement</li>
+                        </ul>
+                    </section>
+                    <section class="get-in-touch">
+                        <h4>Get in touch</h4>
+                        <ul class="category-p">
+                            <li>+62-8XXX-XXX-XX</li>
+                            <li>demo@gmail.com</li>
+                        </ul>
+                    </section>
+                    <section class="follow-us">
+                        <h4>Follow Us</h4>
+                        <ul class="category-p">
+                            <li>Medium</li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>
+                            <li>Facebook</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    <div class="line-text">
+        <div class="line"></div>
+        <p class="text-under-line">© 2025 Digitaldastin</p>
+    </div>
+</footer>
 </body>
 </html>
