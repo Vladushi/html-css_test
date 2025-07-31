@@ -1,0 +1,13 @@
+body{
+    height: 100vh;
+}
+main{
+    height: 100%;
+}
+.category-section-container_background-card-blue{
+    transition: 2s;
+}
+.category-section-container_background-card-blue:hover{
+    transform: scale(1.2);
+    transition: 2s;
+}
