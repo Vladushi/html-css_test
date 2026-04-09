@@ -250,6 +250,7 @@ main {
     transition: 2s;
 }
 
+
 .category-section-container_background-card-blue:hover{
     background: #6246EA;
     transform: scale(1.2);
